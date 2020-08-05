@@ -1,0 +1,174 @@
+body, main, header {
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 40px 0;
+    margin:0;
+    text-align:center;
+}
+
+header {
+    background-color:lightsalmon;
+    padding-bottom:20px;
+}
+
+nav {
+    margin: 0;
+}
+
+header h1 {
+    font-size: 52px;
+    font-family: 'Courier New', Courier, monospace;
+    color:whitesmoke;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul{
+    list-style: none;
+    text-decoration: none;
+    font-size: 25px;
+    text-align: center;
+    padding-left: 0;
+}
+
+header nav ul:last-child a{
+    margin-right:0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    margin: 0 20px 0 0;
+    color: whitesmoke;
+}
+
+img {
+    padding-left: 40px;
+    opacity: 85%;
+}
+
+main section ul {
+    display: flex;
+    flex-direction: row;
+}
+
+main section ul li {
+    background-color: lightgoldenrodyellow;
+    max-width: 400px;
+    max-height: 400px;
+    padding: 30px;
+    margin: 30px;
+    flex: 1;
+    list-style: none;
+
+}
+
+main ul li a {
+    text-decoration: none;
+    justify-content: center;
+    color:salmon;
+    padding: 10px;
+
+
+}
+
+
+main section img {
+    width: 100%;
+}
+
+.
+
+main section form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section.bg-callout {
+    background-color: salmon;
+    color: whitesmoke;
+    padding: 100px;
+}
+
+form input, form textarea {
+    width: 100%;
+}
+
+form textarea {
+    height: 250px;
+}
+
+form div {
+    font-family: cursive;
+    align-content: center; 
+}
+
+form input[type=text] {
+    color: darksalmon;
+}
+
+button {
+    padding: 10px 16px;
+    border-radius: 10px;
+    border: 0;
+    font-size: 16px;
+    background: darksalmon;
+    color: #fff;
+    margin: 0 8px 10px 0;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.item {
+    padding: 20px;
+    flex: 1;
+    justify-content: space-evenly;
+}
+
+.item-left {
+    max-width: 80%;
+    text-align: left;
+    margin-left: 50px;
+}
+
+.item-right {
+    text-align: right;
+    margin-right: 60px;
+}
+
+.item-double {
+    flex: 2;
+}
+
+@media all and (min-width: 600px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px;
+    }
+
+    header nav ul li a:hover {
+        color: rgb(117, 76, 62);
+    }
+
+    main ul li a:hover {
+        color:darksalmon;
+    }
+
+    .group {
+        flex-direction: row;
+        margin: 40px 0;
+    }
+}
