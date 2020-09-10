@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Winkler Portfolio</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/c294a6cb9e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+    <h1>Harry Winkler</h1>
+    
+    <nav>
+        <ul class="group">
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section id="skills">
+        <h2>skills</h2>
+        <ul>
+<!-- Who you are
+Where you are
+What you do and what makes you special -->
+
+            <li>
+                <i class="fas fa-code icon-large"></i>
+                <h2>Web Development</h2>
+                <p>Succinct, beautiful, and responsive design.</p>
+            </li>
+            <li>
+                <i class="fas fa-pen-nib"></i>
+                <h2>Graphic Design</h2>
+                <p>Logos, illustration, and branding collateral.</p>
+            </li>
+            <li>
+                <i class="fas fa-envelope-open-text"></i>
+                <h2>Marketing</h2>
+                <p>Insight, strategy, and current trends.</p>
+            </li>
+        </ul>
+    </section>
+    <section id="about">
+<!-- demonstrate your passion for the web
+demonstrate desire to work on a team with great programmers
+show your personality outside of coding
+List of services you can (or want to) provide a client. -->
+        <article>
+            <div><img src="images/linkedinPic.JPG" alt="an image depicting Harry Winkler" /></div>
+            <div>
+                <h2>About Me</h2>
+                <p>I'm a Philadelphia based kid -- learning the ropes of web development as we weather this pandemic.  </p>
+                <p>After spending 10 years in the specialty coffee industry, I'm branching out to work in new areas.</p>
+            </div>
+        </article>
+    </section>
+    <section id="portfolio" class="bg-callout">
+        <h2>Portfolio</h2>
+        <br>
+        <br>
+        <div>
+            <p>Example Project 1</p>
+        </div>
+        <div>
+            <p>Example Project 2</p>
+        </div>
+        <div>
+            <p>Example Project 3</p>
+        </div>
+        <br>
+        <br>
+    </section>
+    <section id="contact">
+<!-- email address
+link to your github profile
+link to your linkedin profile -->
+
+
+        <article class="group">
+            <div>
+                <h2>Contact</h2>
+                <p>Please feel free to reach out if you'd like to work together</p>
+                <ul>
+                    <li class="contact-item"><a href="mailto:harryewinkler@gmail.com"><i class="fas fa-envelope-square"></i><br>email</a></li>
+                    <li class="contact-item"><a href="https://www.linkedin.com/in/harry-winkler-52107395/"><i class="fab fa-linkedin"></i><br>linkedin</a></li>
+                    <li class="contact-item"><a href="https://github.com/fumbl3b"><i class="fab fa-github-square"></i><br>github</a></li>
+                </ul>
+                <form action="https://formspree.io/xyynolpb" method="post" class="item">
+                    <fieldset>
+                        <legend style="text-align: center;">Contact Form</legend>
+                        <div>
+                            <label for="user-name">Your Email:</label><br>
+                            <input id="user-name" type=text name="_replyto" maxlength="50" required />
+                            <br>
+                            <br>
+                            <label for="message">Enter Message:</label><br>
+                            <textarea id="form-message" type="text" name="message"
+                                required>Please type your message here...</textarea>
+        
+                            <button type="submit">Send</button>
+                            <button type="reset">Reset Form</button>
+                        </div>
+            </div>
+        
+        
+            </fieldset>
+            </form>
+        </article>
+        </section>
+
+</main>
+
+<footer></footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

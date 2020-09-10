@@ -1,12 +1,17 @@
-body, main, header {
-    margin: 0;
+.flex-container {
+    display: flex;
+    flex-direction: column;
 }
 
-h1 {
-    font-family: 'Times New Roman', Times, serif;
-    padding: 40px 0;
-    margin:0;
-    text-align:center;
+.flex-item {
+    flex: 1;
+    text-align: center;
+    padding: 30px;
+    margin: 10px;
+}
+
+.text-left {
+    text-align: left;
 }
 
 header {
@@ -14,23 +19,19 @@ header {
     padding-bottom:20px;
 }
 
+div {
+    border-style: solid;
+    border-color: red;
+    border-width: 5px;
+}
+
 nav {
     margin: 0;
-}
-
-header h1 {
-    font-size: 52px;
-    font-family: 'Courier New', Courier, monospace;
-    color:whitesmoke;
-    text-align: center;
-}
-
-header nav {
     display: flex;
     justify-content: center;
 }
 
-header nav ul{
+nav > ul{
     list-style: none;
     text-decoration: none;
     font-size: 25px;
@@ -38,24 +39,31 @@ header nav ul{
     padding-left: 0;
 }
 
-header nav ul:last-child a{
-    margin-right:0;
-}
-
-header nav ul li a {
+nav > ul > li > a {
     text-decoration: none;
     margin: 0 20px 0 0;
     color: whitesmoke;
 }
 
+nav > ul:last-child > a{
+    margin-right:0;
+}
+
+h1 {
+    font-size: 52px;
+    font-family: 'Courier New', Courier, monospace;
+    color:whitesmoke;
+    text-align: center;
+}
+
 img {
-    padding-left: 40px;
+    max-width: 85%;
+    padding: 10%;
     opacity: 85%;
 }
 
-main section ul {
-    display: flex;
-    flex-direction: row;
+main > section > ul {
+    flex-direction: column;
 }
 
 main section ul li {
@@ -81,6 +89,8 @@ main ul li a {
 
 main section img {
     width: 100%;
+    padding: 30px;
+    border-radius: 50%
 }
 
 .
@@ -89,6 +99,12 @@ main section form {
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
 
 section.bg-callout {
@@ -103,12 +119,10 @@ form input, form textarea {
 
 form textarea {
     height: 250px;
+    color: darksalmon;
 }
 
-form div {
-    font-family: cursive;
-    align-content: center; 
-}
+
 
 form input[type=text] {
     color: darksalmon;
@@ -125,7 +139,6 @@ button {
 }
 
 .group {
-    display: flex;
     flex-direction: column;
     margin-bottom: 100px;
     text-align: center;
@@ -137,22 +150,7 @@ button {
     justify-content: space-evenly;
 }
 
-.item-left {
-    max-width: 80%;
-    text-align: left;
-    margin-left: 50px;
-}
-
-.item-right {
-    text-align: right;
-    margin-right: 60px;
-}
-
-.item-double {
-    flex: 2;
-}
-
-@media all and (min-width: 600px) {
+@media all and (min-width: 800px) {
     header {
         display: flex;
         justify-content: space-between;
@@ -163,12 +161,15 @@ button {
         color: rgb(117, 76, 62);
     }
 
+    main > section > ul > li {
+        flex-direction: row;
+    }
+
     main ul li a:hover {
         color:darksalmon;
     }
-
-    .group {
+    .flex-container {
+        display: flex;
         flex-direction: row;
-        margin: 40px 0;
     }
 }
