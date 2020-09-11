@@ -30,10 +30,9 @@ header > nav {
     justify-content: center;
 }
 
-div {
-    border-style: solid;
-    border-color: red;
-    border-width: 5px;
+.skills {
+    background-color: #f7e0c8;
+    border-radius: 10px;
 }
 
 nav > ul{
