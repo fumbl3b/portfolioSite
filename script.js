@@ -20,4 +20,4 @@ switch (selection) {
         createfile();
         break;
     case 'deleteLast: )_'
-}
+};

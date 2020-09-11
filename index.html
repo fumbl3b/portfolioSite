@@ -12,12 +12,12 @@
 <body>
     <header>
         <h1>Harry Winkler</h1>
-        <nav>
-            <ul class="group">
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+        <nav class="flex-container">
+            <ul class="flex-container">
+                <li class="flex-item"><a href="#skills">Skills</a></li>
+                <li class="flex-item"><a href="#about">About</a></li>
+                <li class="flex-item"><a href="#portfolio">Portfolio</a></li>
+                <li class="flex-item"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -51,9 +51,10 @@ List of services you can (or want to) provide a client. -->
                 <div class="flex-item"><img src="images/linkedinPic.JPG" alt="an image depicting Harry Winkler" /></div>
                 <div class="text-left flex-item">
                     <h2>About Me</h2>
-                    <p>I'm a Philadelphia based kid -- learning the ropes of web development as we weather this
-                        pandemic. </p>
-                    <p>After spending 10 years in the specialty coffee industry, I'm branching out to work in new areas.
+                    <p>I'm a Philadelphia based designer -- with talents that intersect illustration and full stack web
+                        development.  I'm passionate about learning and </p>
+                    <p>After spending 10 years in the specialty coffee industry, I'm branching out to work in new
+                        fields.
                     </p>
                 </div>
             </div>
@@ -64,13 +65,42 @@ List of services you can (or want to) provide a client. -->
             <br>
             <div class="flex-container">
                 <div class="flex-item">
-                    <p>Example Project 1</p>
+                    <div>
+                        <h4>ACQ Bread</h4>
+                        <p class="text-left">Designed and built an intentionally minimal website for this fledgeling
+                            bakery in Brooklyn,
+                            NY</p>
+                        <p>Technologies: HTML, CSS, JAVASCRIPT</p>
+                    </div>
+                    <a href="http://acqbread.com">acqbread.com</a>
+                    <br><br>
+                    <a href="https://github.com/fumbl3b"><i
+                        class="fab fa-github-square"></i></a>
                 </div>
                 <div class="flex-item">
-                    <p>Example Project 2</p>
+                    <div>
+                        <h4>La Colombe Coffee</h4>
+                        <p class="text-left">2018. Designed all print and web materials for cafe staff training across
+                            30 locations
+                            nationally.  Materials covered all aspects of high-volume cafe operations, from hospitality to coffee preparation.</p>
+                        <p>Technologies: Illustrator, InDesign, Procreate, </p>
+                    </div>
+                    <a href="http://www.lacolombe.com">lacolombe.com</a>
+                    <br><br>
+                    <a href="https://github.com/fumbl3b"><i
+                        class="fab fa-github-square"></i></a>
                 </div>
                 <div class="flex-item">
-                    <p>Example Project 3</p>
+                    <div class="">
+                        <h4>Project Template</h4>
+                        <p class="text-left">Description: ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor risus eu nulla egestas accumsan. Sed condimentum aliquam tortor sed luctus. Nullam faucibus, massa sed pharetra finibus, felis purus scelerisque turpis, sit amet suscipit ipsum nisi consectetur libero. Fusce volutpat erat sit amet posuere lacinia. Donec suscipit leo dapibus lorem rutrum sagittis. Duis faucibus finibus venenatis. Donec a tellus tortor. Ut dapibus sed justo eget malesuada. Aliquam eget lacinia lacus. Nam convallis egestas ipsum, eu tempus ipsum eleifend at. Curabitur tristique sodales libero ut lacinia. Pellentesque tristique lectus vel nisl tincidunt pulvinar.
+                        </p>
+                        <p class="text-left">Technologies:</p>
+                    </div>
+                    <a href="">project link</a>
+                    <br><br>
+                    <a href="https://github.com/fumbl3b"><i
+                        class="fab fa-github-square"></i></a>
                 </div>
             </div>
             <br>
@@ -82,31 +112,34 @@ List of services you can (or want to) provide a client. -->
                     <div class="flex-item">
                         <h2>Contact</h2>
                         <p>Please feel free to reach out if you'd like to work together</p>
-                    <div class="flex-item">
-                        <ul>
-                            <li><a href="mailto:harryewinkler@gmail.com"><i class="fas fa-envelope-square"></i><br>email</a></li>
-                            <li><a href="https://www.linkedin.com/in/harry-winkler-52107395/"><i class="fab fa-linkedin"></i><br>LinkedIn</a></li>
-                            <li><a href="https://github.com/fumbl3b"><i class="fab fa-github-square"></i><br>Github</a></li>
-                        </ul>
+                        <div class="flex-container">
+                            <ul class="flex-container">
+                                <li><a href="mailto:harryewinkler@gmail.com"><i
+                                            class="fas fa-envelope-square"></i><br>email</a></li>
+                                <li><a href="https://www.linkedin.com/in/harry-winkler-52107395/"><i
+                                            class="fab fa-linkedin"></i><br>LinkedIn</a></li>
+                                <li><a href="https://github.com/fumbl3b"><i
+                                            class="fab fa-github-square"></i><br>Github</a></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
 
 
-                    <form action="https://formspree.io/xyynolpb" method="post" class="item">
+                    <form action="https://formspree.io/xyynolpb" method="post" class="flex-item">
                         <fieldset>
                             <legend style="text-align: center;">Contact Form</legend>
-                            
-                                <label for="user-name">Your Email:</label><br>
-                                <input id="user-name" type=text name="_replyto" maxlength="50" required />
-                                <br>
-                                <br>
-                                <label for="message">Enter Message:</label><br>
-                                <textarea id="form-message" type="text" name="message"
-                                    required>Please type your message here...</textarea>
 
-                                <button type="submit">Send</button>
-                                <button type="reset">Reset Form</button>
-                        </form>
+                            <label for="user-name">Your Email:</label><br>
+                            <input id="user-name" type=text name="_replyto" maxlength="50" required />
+                            <br>
+                            <br>
+                            <label for="message">Enter Message:</label><br>
+                            <textarea id="form-message" type="text" name="message"
+                                required>Please type your message here...</textarea>
+
+                            <button type="submit">Send</button>
+                            <button type="reset">Reset Form</button>
+                    </form>
                 </div>
 
 

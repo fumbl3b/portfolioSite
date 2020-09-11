@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Titillium+Web:ital,wght@0,400;0,600;1,700&display=swap');
+
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Titillium Web', sans-serif; */
+
 .flex-container {
     display: flex;
     flex-direction: column;
@@ -19,23 +24,25 @@ header {
     padding-bottom:20px;
 }
 
+header > nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 div {
     border-style: solid;
     border-color: red;
     border-width: 5px;
 }
 
-nav {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
 nav > ul{
+    display: flex;
+    justify-content: center;    
     list-style: none;
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
     font-size: 25px;
-    text-align: center;
     padding-left: 0;
 }
 
@@ -45,15 +52,24 @@ nav > ul > li > a {
     color: whitesmoke;
 }
 
-nav > ul:last-child > a{
+nav > ul > li:last-child > a {
     margin-right:0;
 }
 
 h1 {
-    font-size: 52px;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 80px;
+    font-family: 'Titillium Web', sans-serif;
     color:whitesmoke;
     text-align: center;
+}
+
+h2 {
+    font-family: 'Titillium Web', sans-serif;
+    padding-left: 30px;
+    color: salmon;
+    font-size: 40px;
+    font-weight: 700;
+    font-style: italic
 }
 
 img {
@@ -64,6 +80,7 @@ img {
 
 main > section > ul {
     flex-direction: column;
+    padding-left: 0;
 }
 
 main section ul li {
@@ -82,8 +99,6 @@ main ul li a {
     justify-content: center;
     color:salmon;
     padding: 10px;
-
-
 }
 
 
@@ -93,8 +108,6 @@ main section img {
     border-radius: 50%
 }
 
-.
-
 main section form {
     display: flex;
     justify-content: center;
@@ -102,6 +115,7 @@ main section form {
 }
 
 section {
+    font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -110,7 +124,7 @@ section {
 section.bg-callout {
     background-color: salmon;
     color: whitesmoke;
-    padding: 100px;
+    /* padding: 100px; */
 }
 
 form input, form textarea {
@@ -121,7 +135,6 @@ form textarea {
     height: 250px;
     color: darksalmon;
 }
-
 
 
 form input[type=text] {
@@ -138,19 +151,27 @@ button {
     margin: 0 8px 10px 0;
 }
 
-.group {
-    flex-direction: column;
-    margin-bottom: 100px;
+h4 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 50px;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    font-size: 40px;
+    color: whitesmoke;
+    font-style: italic;
+}
+
+footer {
+    color: salmon;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
     text-align: center;
 }
 
-.item {
-    padding: 20px;
-    flex: 1;
-    justify-content: space-evenly;
-}
-
-@media all and (min-width: 800px) {
+@media all and (min-width: 993px) {
     header {
         display: flex;
         justify-content: space-between;
